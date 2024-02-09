@@ -41,7 +41,8 @@ public class LoginController {
             FXMLLoader fxmlLoader=new FXMLLoader(TaskApplication.class.getResource(view));
             try {
                 Parent root=fxmlLoader.load();
-                //UserController userController =loader.getController();
+                IControllerView controller =fxmlLoader.getController();
+                controller.setTaskController(taskController);
                 Scene scene=new Scene(root);
                 Stage stage=new Stage();
                 stage.setTitle(titleWindow);
