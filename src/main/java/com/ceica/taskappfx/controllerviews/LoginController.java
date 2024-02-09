@@ -19,7 +19,13 @@ public class LoginController {
 
     public void btnLogin(ActionEvent actionEvent) {
         if(taskController.login(txtUsername.getText(),txtPassword.getText())){
-            System.out.println("TODO OK");
+            if(taskController.isAdmin()){
+                //Mostrar vista administrador
+                System.out.println("admin");
+            }else{
+                //Mostrar vista usuario
+                System.out.println("user");
+            }
         }else {
             lblMessage.setText("Incorrect User or Password");
         }

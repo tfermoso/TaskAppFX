@@ -53,4 +53,8 @@ public class TaskController {
         Task task=new Task();
         return task.actualizar("status=? where idtask=?",true, idtask);
     }
+
+    public boolean isAdmin() {
+        return userLogged.getRol().getIdrol()==2?true:false;
+    }
 }

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Proyecto TaskFx">
+    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Método Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/login-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1707493065959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Método Login">
+      <option name="closed" value="true" />
+      <created>1707496175625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707496175625</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Método Login">
+      <option name="closed" value="true" />
+      <created>1707496213000</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707496213000</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proyecto TaskFx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto TaskFx" />
+    <MESSAGE value="Método Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Método Login" />
   </component>
 </project>
