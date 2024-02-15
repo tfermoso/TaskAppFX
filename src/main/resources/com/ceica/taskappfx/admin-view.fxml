@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
@@ -22,6 +25,10 @@
                               <TableColumn fx:id="rolColumn" prefWidth="96.79998779296875" text="Rol" />
                           </columns>
                         </TableView>
+                        <TextField fx:id="txtUserName" layoutX="365.0" layoutY="14.0" promptText="Username" />
+                        <PasswordField fx:id="txtPassword" layoutX="366.0" layoutY="50.0" promptText="Password" />
+                        <PasswordField fx:id="txtrePassword" layoutX="367.0" layoutY="88.0" promptText="Repit Password" />
+                        <ComboBox fx:id="comboRol" layoutX="367.0" layoutY="130.0" prefWidth="150.0" promptText="Rol" />
                      </children>
                   </AnchorPane>
             </content>

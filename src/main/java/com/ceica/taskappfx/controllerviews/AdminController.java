@@ -1,14 +1,14 @@
 package com.ceica.taskappfx.controllerviews;
 
 import com.ceica.taskappfx.controller.TaskController;
+import com.ceica.taskappfx.models.Rol;
 import com.ceica.taskappfx.models.User;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 import java.util.List;
 
@@ -22,6 +22,14 @@ public class AdminController extends ControllerView  {
     protected TableColumn<User,String> userNameColumn;
     @FXML
     protected TableColumn<User,String> rolColumn;
+    @FXML
+    protected TextField txtUserName;
+    @FXML
+    protected PasswordField txtPassword;
+    @FXML
+    protected PasswordField txtrePassword;
+    @FXML
+    protected ComboBox<Rol> comboRol;
 
     private ObservableList<User> observableList= FXCollections.observableArrayList();
 
@@ -30,7 +38,7 @@ public class AdminController extends ControllerView  {
         idColumn.setCellValueFactory(cell -> new SimpleObjectProperty<>(cell.getValue().getIduser()));
         userNameColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getUsername()));
         rolColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getRol().getDescription()));
-
+        comboRol.getItems().addAll();
     }
 
     public AdminController() {
