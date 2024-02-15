@@ -7,5 +7,8 @@ public abstract class ControllerView {
 
     public void setTaskController(TaskController taskController) {
         this.taskController=taskController;
+        cargaInicial();
     }
+
+    public abstract void cargaInicial();
 }

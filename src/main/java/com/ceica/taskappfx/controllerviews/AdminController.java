@@ -30,13 +30,18 @@ public class AdminController extends ControllerView  {
         idColumn.setCellValueFactory(cell -> new SimpleObjectProperty<>(cell.getValue().getIduser()));
         userNameColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getUsername()));
         rolColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getRol().getDescription()));
-        List<User> userList=taskController.getAllUser();
-        observableList.addAll(userList);
-        tblUser.setItems(observableList);
+
     }
 
     public AdminController() {
 
 
+    }
+
+    @Override
+    public void cargaInicial() {
+        List<User> userList=taskController.getAllUser();
+        observableList.addAll(userList);
+        tblUser.setItems(observableList);
     }
 }
