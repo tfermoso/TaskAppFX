@@ -57,4 +57,9 @@ public class TaskController {
     public boolean isAdmin() {
         return userLogged.getRol().getIdrol()==2?true:false;
     }
+
+    public List<User> getAllUser() {
+        User user=new User();
+        return  user.getAll();
+    }
 }
