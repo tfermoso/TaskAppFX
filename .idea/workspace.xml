@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Carga Inicial de datos AdminController">
+    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Cargando Roles en el formulario de create User">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708019717571</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cargando Roles en el formulario de create User">
+      <option name="closed" value="true" />
+      <created>1708022166683</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708022166683</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +172,7 @@
     <MESSAGE value="IControllerView" />
     <MESSAGE value="Carga Inicial de datos" />
     <MESSAGE value="Carga Inicial de datos AdminController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carga Inicial de datos AdminController" />
+    <MESSAGE value="Cargando Roles en el formulario de create User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cargando Roles en el formulario de create User" />
   </component>
 </project>

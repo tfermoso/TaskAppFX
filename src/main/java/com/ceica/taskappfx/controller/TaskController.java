@@ -2,6 +2,7 @@ package com.ceica.taskappfx.controller;
 
 
 
+import com.ceica.taskappfx.models.Rol;
 import com.ceica.taskappfx.models.Task;
 import com.ceica.taskappfx.models.User;
 
@@ -61,5 +62,10 @@ public class TaskController {
     public List<User> getAllUser() {
         User user=new User();
         return  user.getAll();
+    }
+
+    public List<Rol> getAllRol() {
+        Rol rol=new Rol();
+        return rol.getAll();
     }
 }

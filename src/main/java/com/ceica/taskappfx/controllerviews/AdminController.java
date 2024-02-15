@@ -9,6 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.util.StringConverter;
 
 import java.util.List;
 
@@ -38,7 +39,17 @@ public class AdminController extends ControllerView  {
         idColumn.setCellValueFactory(cell -> new SimpleObjectProperty<>(cell.getValue().getIduser()));
         userNameColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getUsername()));
         rolColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getRol().getDescription()));
-        comboRol.getItems().addAll();
+        comboRol.setConverter(new StringConverter<Rol>() {
+            @Override
+            public String toString(Rol rol) {
+                return rol.getDescription();
+            }
+
+            @Override
+            public Rol fromString(String s) {
+                return null;
+            }
+        });
     }
 
     public AdminController() {
@@ -51,5 +62,7 @@ public class AdminController extends ControllerView  {
         List<User> userList=taskController.getAllUser();
         observableList.addAll(userList);
         tblUser.setItems(observableList);
+        List<Rol> rolList=taskController.getAllRol();
+        comboRol.getItems().addAll(rolList);
     }
 }
