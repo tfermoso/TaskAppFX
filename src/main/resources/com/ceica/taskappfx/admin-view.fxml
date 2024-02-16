@@ -11,14 +11,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ceica.taskappfx.controllerviews.AdminController">
    <children>
       <TabPane layoutX="14.0" layoutY="36.0" prefHeight="349.0" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="User">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="321.0" prefWidth="438.0">
                      <children>
                         <TableView fx:id="tblUser" layoutX="14.0" layoutY="14.0" prefHeight="281.0" prefWidth="338.0">
                           <columns>
@@ -31,8 +30,9 @@
                         <PasswordField fx:id="txtPassword" layoutX="366.0" layoutY="50.0" promptText="Password" />
                         <PasswordField fx:id="txtrePassword" layoutX="367.0" layoutY="88.0" promptText="Repit Password" />
                         <ComboBox fx:id="comboRol" layoutX="367.0" layoutY="130.0" prefWidth="150.0" promptText="Rol" />
-                        <Button layoutX="365.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnAddUser" prefHeight="26.0" prefWidth="75.0" text="Add" />
+                        <Button fx:id="btnAdd" layoutX="365.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnAddUser" prefHeight="26.0" prefWidth="75.0" text="Add" />
                         <Label fx:id="lblMsg" layoutX="366.0" layoutY="216.0" textFill="#ec0505" />
+                        <Button fx:id="btnUpdate" layoutX="367.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnUpdateUser" prefHeight="26.0" prefWidth="73.0" text="Update" visible="false" />
                      </children>
                   </AnchorPane>
             </content>

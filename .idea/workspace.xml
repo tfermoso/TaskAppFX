@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Mostramos roles">
+    <list default="true" id="167a9603-1cea-444f-8564-24dd65c750ef" name="Changes" comment="Actualizamos tabla de usuarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708023432799</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Actualizamos tabla de usuarios">
+      <option name="closed" value="true" />
+      <created>1708095091937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708095091937</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,14 +191,15 @@
     <MESSAGE value="Carga Inicial de datos AdminController" />
     <MESSAGE value="Cargando Roles en el formulario de create User" />
     <MESSAGE value="Mostramos roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mostramos roles" />
+    <MESSAGE value="Actualizamos tabla de usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizamos tabla de usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java</url>
-          <line>73</line>
+          <line>84</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

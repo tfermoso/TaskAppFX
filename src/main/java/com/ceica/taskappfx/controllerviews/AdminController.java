@@ -34,6 +34,10 @@ public class AdminController extends ControllerView  {
     protected ComboBox<Rol> comboRol;
     @FXML
     protected Label lblMsg;
+    @FXML
+    protected Button btnAdd;
+    @FXML
+    protected Button btnUpdate;
 
     private ObservableList<User> observableList= FXCollections.observableArrayList();
 
@@ -52,6 +56,13 @@ public class AdminController extends ControllerView  {
             public Rol fromString(String s) {
                 return null;
             }
+        });
+        tblUser.setOnMouseClicked(e->{
+            User user=tblUser.getSelectionModel().getSelectedItem();
+            txtUserName.setText(user.getUsername());
+            comboRol.setValue(user.getRol());
+            btnAdd.setVisible(false);
+            btnUpdate.setVisible(true);
         });
     }
 
@@ -74,11 +85,31 @@ public class AdminController extends ControllerView  {
             taskController.createUser(txtUserName.getText(),txtPassword.getText(),comboRol.getSelectionModel().getSelectedItem().getIdrol());
             List<User> userList=taskController.getAllUser();
             observableList.clear();
-            tblUser.refresh();
+            //tblUser.refresh();
             observableList.addAll(userList);
             tblUser.refresh();
         }else{
             lblMsg.setText("Password must be equals");
         }
+    }
+
+    public void btnUpdateUser(ActionEvent actionEvent) {
+        if(txtPassword.getText().equals(txtrePassword.getText())){
+            User user=tblUser.getSelectionModel().getSelectedItem();
+            user.setPassword(txtPassword.getText());
+            user.setRol(comboRol.getSelectionModel().getSelectedItem());
+            taskController.updateUser(user);
+            List<User> userList=taskController.getAllUser();
+            observableList.clear();
+            //tblUser.refresh();
+            observableList.addAll(userList);
+            tblUser.refresh();
+
+        }else{
+            lblMsg.setText("Passwords must to be equals");
+        }
+        //taskController.updateUser();
+        btnAdd.setVisible(true);
+        btnUpdate.setVisible(false);
     }
 }
