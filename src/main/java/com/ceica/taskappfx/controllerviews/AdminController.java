@@ -7,6 +7,7 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.util.StringConverter;
@@ -31,6 +32,8 @@ public class AdminController extends ControllerView  {
     protected PasswordField txtrePassword;
     @FXML
     protected ComboBox<Rol> comboRol;
+    @FXML
+    protected Label lblMsg;
 
     private ObservableList<User> observableList= FXCollections.observableArrayList();
 
@@ -64,5 +67,18 @@ public class AdminController extends ControllerView  {
         tblUser.setItems(observableList);
         List<Rol> rolList=taskController.getAllRol();
         comboRol.getItems().addAll(rolList);
+    }
+
+    public void btnAddUser(ActionEvent actionEvent) {
+        if(txtPassword.getText().equals(txtrePassword.getText())){
+            taskController.createUser(txtUserName.getText(),txtPassword.getText(),comboRol.getSelectionModel().getSelectedItem().getIdrol());
+            List<User> userList=taskController.getAllUser();
+            observableList.clear();
+            tblUser.refresh();
+            observableList.addAll(userList);
+            tblUser.refresh();
+        }else{
+            lblMsg.setText("Password must be equals");
+        }
     }
 }
